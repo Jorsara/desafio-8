@@ -1,50 +1,32 @@
 [
 	{
-		"title": "Producto",
+		"title": "Gorro",
 		"price": 400,
-		"thumbnail": "images/Producto.jpg",
+		"thumbnail": "https://cdn3.iconfinder.com/data/icons/education-209/64/graduation-square-academic-cap-school-128.png",
 		"id": 1
 	},
 	{
-		"title": "Producto 2",
-		"price": 400,
-		"thumbnail": "images/Producto.jpg",
+		"title": "Reloj",
+		"price": 830,
+		"thumbnail": "https://cdn3.iconfinder.com/data/icons/education-209/64/clock-stopwatch-timer-time-128.png",
 		"id": 2
 	},
 	{
-		"title": "Producto 3",
-		"price": 400,
-		"thumbnail": "images/Producto.jpg",
+		"title": "Calculadora",
+		"price": 350,
+		"thumbnail": "https://cdn3.iconfinder.com/data/icons/education-209/64/calculator-math-tool-school-128.png",
 		"id": 3
 	},
 	{
-		"title": "Producto 4",
-		"price": 400,
-		"thumbnail": "images/Producto.jpg",
+		"title": "Escuadra",
+		"price": 200,
+		"thumbnail": "https://cdn3.iconfinder.com/data/icons/education-209/64/ruler-triangle-stationary-school-128.png",
 		"id": 4
 	},
 	{
-		"title": "Producto 5",
-		"price": 400,
-		"thumbnail": "images/Producto.jpg",
+		"title": "Pizarra",
+		"price": 500,
+		"thumbnail": "https://cdn3.iconfinder.com/data/icons/education-209/64/board-math-class-school-128.png",
 		"id": 5
-	},
-	{
-		"title": "Producto 6",
-		"price": 400,
-		"thumbnail": "images/Producto.jpg",
-		"id": 6
-	},
-	{
-		"title": "Producto 7",
-		"price": 400,
-		"thumbnail": "images/Producto.jpg",
-		"id": 7
-	},
-	{
-		"title": "Producto 8",
-		"price": 400,
-		"thumbnail": "images/Producto.jpg",
-		"id": 8
 	}
 ]
