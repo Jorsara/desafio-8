@@ -9,7 +9,7 @@ const server = app.listen(8080, () =>{
     console.log('Escuchando en el puerto 8080.');
 });
 
-app.use(bodyParser.json());
+app.use(bodyParser());
 app.use(express.static('public'));
 
 // Configuración de pug
