@@ -5,7 +5,7 @@ const fs = require('fs');
 const bodyParser = require('body-parser');
 const router = express.Router();
 
-app.use(bodyParser.json());
+app.use(bodyParser.json);
 
 // Vista de productos en tabla
 router.get('/productos/vista', async (req, res)=>{    
@@ -71,7 +71,7 @@ router.post('/productos/guardar', async (req, res)=>{
         
         try {
             await fs.promises.writeFile('./productos.json', JSON.stringify(json, null, '\t'));
-            res.send('Producto cargado exitosamente.')
+            res.redirect('back');
         } catch (err) {
             throw new Error(err);
         }
@@ -88,11 +88,19 @@ router.put('/productos/actualizar/:id', async (req, res)=>{
         let prodActualizado = req.body;
         prodActualizado.id = req.params.id;
         let foundIndex = json.findIndex(x => x.id == req.params.id);
-        json[foundIndex] = prodActualizado;
+        if (prodActualizado.hasOwnProperty('title')){
+            json[foundIndex].title = prodActualizado.title;
+        }
+        if (prodActualizado.hasOwnProperty('price')){
+            json[foundIndex].price = prodActualizado.price;
+        }
+        if (prodActualizado.hasOwnProperty('thumbnail')){
+            json[foundIndex].thumbnail = prodActualizado.thumbnail;
+        }
 
         try {
             await fs.promises.writeFile('./productos.json', JSON.stringify(json, null, '\t'));
-            res.send(prodActualizado)
+            res.send(json[foundIndex])
         } catch (err) {
             throw new Error(err);
         }
